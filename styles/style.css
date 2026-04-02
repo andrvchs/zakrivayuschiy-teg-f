@@ -324,7 +324,6 @@
   align-items: center;
   gap: 8px;
   padding-block: 15px;
-  background-color: var(--bg-color, #fff);
   inline-size: var(--button-width);
 }
 
