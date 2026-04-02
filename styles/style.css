@@ -344,6 +344,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   gap: 30px;
   padding: 28px;
   font-family: var(--accent-font-family);
@@ -382,8 +383,12 @@
 
 @media (width <= 375px) {
   .header {
+    width: 99.9%;
     margin-block: 100px;
     padding-block: var(--header-block-padding);
+  }
+  .main{
+    width: 99.9%;
   }
 
   .card__title {
