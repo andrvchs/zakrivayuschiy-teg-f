@@ -142,18 +142,18 @@
   font-size: 14px;
   text-transform: uppercase;
   text-shadow:
-    -1px 0 #fff,
-    0 1px #fff,
-    1px 0 #fff,
-    0 -1px #fff;
+    -1px 0 var(--bg-color, #fff),
+    0 1px var(--bg-color, #fff),
+    1px 0 var(--bg-color, #fff),
+    0 -1px var(--bg-color, #fff);
   mix-blend-mode: hard-light;
 }
 
-@supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
+@supports ((-webkit-text-stroke: 1px var(--bg-color, #fff)) or (text-stroke: 1px var(--bg-color, #fff))) {
   .card__label {
     text-shadow: none;
-    -webkit-text-stroke: 1px #fff;
-    text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px var(--bg-color, #fff);
+    text-stroke: 1px var(--bg-color, #fff);
   }
 }
 
@@ -277,7 +277,7 @@
   font-weight: var(--accent-font-weight);
   font-size: 14px;
   line-height: 90%;
-  background-color: transparent;
+  background-color: var(--bg-color, #fff);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
